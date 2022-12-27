@@ -26,6 +26,9 @@
 .product_detail .info {
   width: 532px;
   height: 632px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product_detail .photo .btns {
@@ -48,6 +51,60 @@
 
 .product_detail .info ul.size {
   display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  /* margin-bottom: 28px; */
+}
+.product_detail .info ul.size li {
+  width: 92px;
+  height: 92px;
+  background-color: #fff;
+  border: 1px solid #000;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 92px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.product_detail .info ul.size li:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product_detail .info .top .category {
+  font-size: 14px;
+  font-weight: 500;
+}
+.product_detail .info .top h2 {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -1px;
+  line-height: 60px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+.product_detail .info .top .price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.product_detail .info .top .size_title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 36px;
+}
+.product_detail .info .top .size_title p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.product_detail .info .top .size_title a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 /* product_about */
@@ -66,4 +123,22 @@
   width: 414px;
   height: 556px;
   background-color: #e1e1e1;
+}
+
+.product_about .text_box {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product_about .text_box h2 {
+  font-weight: 800;
+  font-size: 40px;
+  margin-bottom: 28px;
+  line-height: 40px;
+}
+.product_about .text_box p {
+  font-size: 18px;
+  line-height: 28px;
 }
